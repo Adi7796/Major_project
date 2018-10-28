@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#ff2f2f">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/shutterstock_260351465" />
+        android:layout_marginTop="30dp"
+        android:id="@+id/img"
+        android:layout_width="244sp"
+        android:layout_height="244sp"
+        android:src="@drawable/sdha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
 
     <TextView
-        android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello , Welcome to Smart health-care Monitoring"
-        />
+        android:layout_marginTop="20dp"
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/img"
+        android:text="  Smart-Health Care "
+        android:textColor="@android:color/background_light"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
 
-</LinearLayout>
+         />
+
+    <TextView
+        android:layout_below="@+id/t1"
+        android:id="@+id/t2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/background_light"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Welcome, looking for an app that helps you remain healthy and check your vitals anywhere ? this is just the app for you."
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="next"
+        android:background="@drawable/rounded_button"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
