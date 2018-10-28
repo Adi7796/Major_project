@@ -21,13 +21,13 @@ public class OpenApp extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginActivity();
+            SignUpActivity();
             }
         });
 
     }
-    public void LoginActivity(){
-        Intent intent= new Intent(this,LoginActivity.class);
+    public void SignUpActivity(){
+        Intent intent= new Intent(this,SignUpActivity.class);
         startActivity(intent);
     }
 }
