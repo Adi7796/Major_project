@@ -70,7 +70,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public String searchPass(String email)
     {
-        String query="select pass from "+TABLE_NAME;
+        db=this.getReadableDatabase();
+        String query="select email,pass from "+TABLE_NAME;
         Cursor cursor=db.rawQuery(query,null);
         String a,b;
         b="not found";
