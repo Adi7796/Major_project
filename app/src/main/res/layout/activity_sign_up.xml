@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
+
     android:orientation="vertical"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="16dp"
+    android:background="@drawable/sc"
     tools:context="com.example.adity.major_project.SignUpActivity">
 
 
@@ -19,7 +21,9 @@
         android:layout_height="match_parent">
 
     <LinearLayout
-
+        android:background="@drawable/box"
+        android:padding="20dp"
+        android:layout_gravity="center"
         android:id="@+id/email_login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
