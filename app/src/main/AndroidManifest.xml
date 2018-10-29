@@ -8,9 +8,9 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:label="HealthCare Monitoring"
         android:allowBackup="true"
         android:icon="@mipmap/healthcare"
+        android:label="HealthCare Monitoring"
         android:roundIcon="@mipmap/healthcare"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -26,11 +26,12 @@
             android:label="@string/title_activity_login" />
         <activity
             android:name=".SignUpActivity"
-            android:label="Sign in"></activity>
-        <activity android:name=".RegisterActivity"
-            android:label="Register your detials">
-
-        </activity>
+            android:label="Sign in" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register your detials" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".HomeActivity"></activity>
     </application>
 
 </manifest>
