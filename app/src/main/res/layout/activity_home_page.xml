@@ -8,10 +8,11 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-
     android:paddingTop="16dp"
     android:background="@drawable/background"
     tools:context="com.example.adity.major_project.HomePage">
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,15 +20,18 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/t1"
         android:fontFamily="cursive"
-        android:textSize="30dp" />
+        android:textSize="44dp"
+        android:textStyle="bold"
+        android:textColor="#241315"
+        />
 
     <TextView
-        android:id="@+id/t2"
+        android:id="@+id/pulse"
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Your average values"
+        android:text="Your vital values are as follows"
         android:textSize="20dp"
         android:textColor="#241315"
         android:textStyle="italic"/>
@@ -36,7 +40,9 @@
     android:layout_marginTop="20dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@drawable/box"
+    android:padding="15dp">
 
 
     <ImageView
@@ -50,12 +56,14 @@
         android:scaleType="fitCenter"/>
 
     <TextView
+
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text="120/70"
         android:textSize="40dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/button_box"
+        android:textColor="#241315"
         android:gravity="center"
         />
 
@@ -65,7 +73,9 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/box"
+        android:padding="15dp">
 
         <ImageView
             android:id="@+id/img2"
@@ -79,13 +89,16 @@
             />
 
         <TextView
+            android:id="@+id/temp"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="120/70"
+            android:text="98 degrees F"
             android:textSize="40dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/button_box"
             android:gravity="center"
+            android:textColor="#241315"
+
             />
 
     </LinearLayout>

@@ -46,6 +46,11 @@ public class SignUpActivity extends AppCompatActivity {
                 if(strpass.equals(password))
                 {
                     Intent intent= new Intent(SignUpActivity.this,HomePage.class);
+
+                    String un=helper.searchName(stremail);
+                    Toast toast = Toast.makeText(SignUpActivity.this,"Welcome "+un, Toast.LENGTH_SHORT);
+                    toast.show();
+                    intent.putExtra("send_name",un);
                     startActivity(intent);
                 }
 
