@@ -41,11 +41,11 @@ public class SignUpActivity extends AppCompatActivity {
 
 
                 String password=helper.searchPass(stremail);
-                
+
 
                 if(strpass.equals(password))
                 {
-                    Intent intent= new Intent(SignUpActivity.this,HomeActivity.class);
+                    Intent intent= new Intent(SignUpActivity.this,HomePage.class);
                     startActivity(intent);
                 }
 
