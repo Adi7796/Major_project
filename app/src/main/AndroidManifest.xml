@@ -32,12 +32,16 @@
             android:label="Register your detials" />
         <activity
             android:name=".HomePage"
+            android:parentActivityName=".SignUpActivity"
             android:label="Home" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".CheckPulseActivity"
+
             android:label="Check Pulse"/>
         <activity android:name=".CheckTempActivity"
-            android:label="Check Temperature"></activity>
+
+            android:label="Check Temperature"
+            ></activity>
     </application>
 
 </manifest>
