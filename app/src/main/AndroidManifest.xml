@@ -55,8 +55,10 @@
             android:parentActivityName=".HomePage" />
         <activity
             android:name=".AddDoctorDetails"
-            android:label="Add Doctor Details"></activity>
-        <activity android:name=".Call_doctor"></activity>
+            android:label="Add Doctor Details"
+            android:parentActivityName=".ContactDoctorActivity"></activity>
+        <activity android:name=".Call_doctor"
+            android:label="Doctor Details"></activity>
     </application>
 
 </manifest>

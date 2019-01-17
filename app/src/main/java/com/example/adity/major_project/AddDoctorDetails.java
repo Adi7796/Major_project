@@ -17,6 +17,7 @@ public class AddDoctorDetails extends AppCompatActivity {
         Button button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_doctor_details);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
        button =(Button)findViewById(R.id.add_button);
         button.setOnClickListener(new View.OnClickListener() {
