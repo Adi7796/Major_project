@@ -1,19 +1,15 @@
 package com.example.adity.major_project;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 
-public class CheckPulseActivity extends AppCompatActivity {
+public class Predict_disease_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_pulse);
+        setContentView(R.layout.activity_predict_disease_);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
-
 }

@@ -10,22 +10,9 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/background"
+    android:background="@drawable/home_back"
     tools:context="com.example.adity.major_project.HomePage">
 
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/t1"
-        android:fontFamily="cursive"
-        android:textSize="44dp"
-        android:textStyle="bold"
-        android:textColor="#241315"
-        />
 
     <TextView
         android:id="@+id/t2"
@@ -34,17 +21,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Your vital values are as follows"
-        android:textSize="20dp"
+        android:textSize="24dp"
         android:textColor="#241315"
-        android:textStyle="italic"/>
+        android:textStyle="bold"/>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
-        android:padding="15dp">
+        >
 
 
         <ImageView
@@ -57,14 +44,14 @@
             android:maxHeight="100dp"
             android:scaleType="fitCenter"/>
 
-        <TextView
+        <Button
             android:id="@+id/pulse"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:text="120/70"
             android:textSize="40dp"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/square_button"
+            android:background="@drawable/rounded_button2"
             android:textColor="#241315"
             android:gravity="center"
             />
@@ -72,12 +59,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
-        android:padding="15dp">
+        >
 
         <ImageView
             android:id="@+id/img2"
@@ -90,51 +76,65 @@
             android:scaleType="fitCenter"
             />
 
-        <TextView
+        <Button
             android:id="@+id/temp"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="98 degrees F"
+            android:text="98 deg F"
             android:textSize="40dp"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/square_button"
+            android:background="@drawable/rounded_button2"
             android:gravity="center"
             android:textColor="#241315"
 
             />
 
     </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
 
-    android:padding="15dp"
-    android:layout_marginTop="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/square_button"
+            android:gravity="center"
+            android:text="Check Prognosis"
+            android:textColor="#241315"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cont_doc"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/square_button"
+            android:gravity="center"
+            android:text="Contact doctor"
+            android:textColor="#241315"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:text="Check Prognosis"
-        android:textSize="25dp"
+        android:id="@+id/predict"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Predict Disease"
+        android:textSize="35dp"
         android:layout_marginLeft="10dp"
-        android:background="@drawable/square_button"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:background="@drawable/rounded_button2"
         android:gravity="center"
         android:textColor="#241315"
-        />
-
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:text="Contact doctor"
-        android:textSize="25dp"
-        android:layout_marginLeft="15dp"
-        android:background="@drawable/square_button"
-        android:gravity="center"
-        android:textColor="#241315"
-
-        />
-
-</LinearLayout>
+         />
 
 </LinearLayout>

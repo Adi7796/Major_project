@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.adity.major_project">
 
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- To auto-complete the email acti_list field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -32,16 +32,31 @@
             android:label="Register your detials" />
         <activity
             android:name=".HomePage"
-            android:parentActivityName=".SignUpActivity"
             android:label="Home" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".CheckPulseActivity"
-
-            android:label="Check Pulse"/>
-        <activity android:name=".CheckTempActivity"
-
+        <activity
+            android:name=".CheckPulseActivity"
+            android:label="Check Pulse"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".CheckTempActivity"
             android:label="Check Temperature"
-            ></activity>
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".Predict_disease_Activity"
+            android:label="Predict your disease"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".ContactDoctorActivity"
+            android:label="Contact Doctor"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".AddDoctorDetails"
+            android:label="Add Doctor Details"></activity>
+        <activity android:name=".Call_doctor"></activity>
     </application>
 
 </manifest>
