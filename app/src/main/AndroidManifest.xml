@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -58,7 +59,8 @@
             android:label="Add Doctor Details"
             android:parentActivityName=".ContactDoctorActivity"></activity>
         <activity android:name=".Call_doctor"
-            android:label="Doctor Details"></activity>
+            android:label="Doctor Details"
+            android:parentActivityName=".ContactDoctorActivity"></activity>
     </application>
 
 </manifest>

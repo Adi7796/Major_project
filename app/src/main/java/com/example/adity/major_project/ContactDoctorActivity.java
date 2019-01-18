@@ -6,8 +6,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -22,6 +24,18 @@ public class ContactDoctorActivity extends AppCompatActivity {
         setContentView(R.layout.contact_doctor);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        final ListView list = (ListView) findViewById(R.id.ListView);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            public void onItemClick(AdapterView<?>parent, View view,int position,long id)
+            {
+                TextView textView = (TextView) view.findViewById(R.id.list_content);
+                String text = textView.getText().toString();
+                Intent intent= new Intent(ContactDoctorActivity.this,Call_doctor.class);
+                intent.putExtra("message",text);
+                startActivity(intent);
+            }
+        });
 
         show();
 

@@ -153,4 +153,68 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+   /* public String getNumber(String name)
+    {
+        db=this.getReadableDatabase();
+        String query="select number from "+TABLE_NAME2 +" where name = "+name;
+        Cursor cursor=db.rawQuery(query,null);
+        String s1="";
+        if (cursor.moveToFirst())
+
+        {
+            do
+            {
+                s1 = cursor.getString(cursor.getColumnIndex("number"));
+            }while (cursor.moveToNext());
+        }
+
+        return s1;
+    }
+
+    public String getEmail(String name)
+    {
+        db=this.getReadableDatabase();
+        String query="select email from "+TABLE_NAME2 +" where name = "+name;
+        Cursor cursor=db.rawQuery(query,null);
+        String s2="";
+        if (cursor.moveToFirst())
+
+        {
+            do
+            {
+                s2 = cursor.getString(cursor.getColumnIndex("number"));
+            }while (cursor.moveToNext());
+        }
+
+        return s2;
+    }
+
+    public String getSpecs(String name)
+    {
+        db=this.getReadableDatabase();
+        String query="select specialization from "+TABLE_NAME2 +" where name = "+'name';
+        Cursor cursor=db.rawQuery(query,null);
+        String s3="";
+        if (cursor.moveToFirst())
+
+        {
+            do
+            {
+                s3 = cursor.getString(cursor.getColumnIndex("number"));
+            }while (cursor.moveToNext());
+        }
+
+        return s3;
+    }
+*/
+
+   public Cursor getInfo(String name, SQLiteDatabase db)
+   {
+       String[] projection={COLUMN_SPECIALIZATION,COLUMN_NUMBER,COLUMN_EMAIL};
+       String selection=COLUMN_NAME + " LIKE ?";
+       String[] selection_args={name};
+       Cursor cursor=db.query(TABLE_NAME2,projection,selection,selection_args,null,null,null);
+       return cursor;
+
+   }
 }
